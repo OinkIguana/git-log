@@ -1,4 +1,5 @@
 @import 'syntax-variables';
+@import 'ui-variables';
 
 @padding: 1em;
 @margin: @padding - 0.05em;
@@ -59,9 +60,12 @@
             }
 
             span {
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: block;
+                display: inline-block;
+                border: 1px solid @base-border-color;
+                margin-right: 4px;
+                padding: 0 2px;
+                border-radius: 4px;
+                color: @text-color-selected;
             }
         }
 
@@ -299,6 +303,114 @@
         }
     }
     .log-highlight p {
-        background-color:@syntax-selection-color;
+        background-color: @syntax-selection-color;
     }
+}
+
+.color-1 { 
+  background-color: @background-color-info;
+}
+
+.color-1-fill { 
+  fill: @background-color-info;
+}
+
+.color-1-stroke { 
+  stroke: @background-color-info;
+}
+
+.color-2 { 
+  background-color: @background-color-success;
+}
+
+.color-2-fill { 
+  fill: @background-color-success;
+}
+
+.color-2-stroke { 
+  stroke: @background-color-success;
+}
+
+.color-3 { 
+  background-color: @background-color-warning;
+}
+
+.color-3-fill { 
+  fill: @background-color-warning;
+}
+
+.color-3-stroke { 
+  stroke: @background-color-warning;
+}
+
+.color-4 { 
+  background-color: @background-color-error;
+}
+
+.color-4-fill { 
+  fill: @background-color-error;
+}
+
+.color-4-stroke { 
+  stroke: @background-color-error;
+}
+
+.color-5 { 
+  background-color: @ui-site-color-1;
+}
+
+.color-5-fill { 
+  fill: @ui-site-color-1;
+}
+
+.color-5-stroke { 
+  stroke: @ui-site-color-1;
+}
+
+.color-6 { 
+  background-color: @ui-site-color-2;
+}
+
+.color-6-fill { 
+  fill: @ui-site-color-2;
+}
+
+.color-6-stroke { 
+  stroke: @ui-site-color-2;
+}
+
+.color-7 { 
+  background-color: @ui-site-color-3;
+}
+
+.color-7-fill { 
+  fill: @ui-site-color-3;
+}
+
+.color-7-stroke { 
+  stroke: @ui-site-color-3;
+}
+
+.color-8 { 
+  background-color: @ui-site-color-4;
+}
+
+.color-8-fill { 
+  fill: @ui-site-color-4;
+}
+
+.color-8-stroke { 
+  stroke: @ui-site-color-4;
+}
+
+.color-9 { 
+  background-color: @ui-site-color-5;
+}
+
+.color-9-fill { 
+  fill: @ui-site-color-5;
+}
+
+.color-9-stroke { 
+  stroke: @ui-site-color-5;
 }
